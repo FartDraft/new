@@ -3,7 +3,7 @@ if [[ ! -e "$samples" ]]; then
     echo "Create $samples directory"
 fi
 
-hook='nvim .'
+hook='neovide .'
 function new() {
     if [[ ! -e "${samples}${1}" ]]; then
         echo "No such sample for '${1}' language"
